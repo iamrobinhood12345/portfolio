@@ -34,21 +34,18 @@
     </header>
     <main>
       <section id="projects">
-        <article>
+        <article class="template">
           <header>
-            <h1>
-              Project: blog
-            </h1>
-            <section class="article-body"><p>Working on this website. Under construction!</p></section>
+            <h1><a href="">
+              Title
+            </a></h1>
+            <div class="publishedLine">
+              <!--Published <time pubdate datetime="2000-01-01">Publish Time</time>-->
+              Published on
+            </div>
+            <!--<section class="article-body"><p>Working on this website. Under construction!</p></section>-->
           </header>
-        </article>
-        <article>
-          <header>
-            <h1>
-              Project: upcoming!
-            </h1>
-            <section class="article-body"><p>Not yet!</p></section>
-          </header>
+          <section class="article-body"></section>
         </article>
       </section>
       <section id="about">
@@ -68,6 +65,10 @@
       </section>
     </main>
     <footer>
+      &copy; 2016 William Benjamin Shields <|-|-|>
     </footer>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/blogProjects.js"></script>
+    <script src="scripts/article.js"></script>
   </body>
 </html>
