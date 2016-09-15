@@ -11,7 +11,7 @@ Article.prototype.toHtml = function() {
   var $newArticle = $('article.template').clone();
   $newArticle.find('h1 a').attr('href', this.projectUrl);
   $newArticle.find('h1 a').text(this.title);
-  $newArticle.find('div').append(this.publishedOn);
+  $newArticle.find('p').append(this.publishedOn);
   $newArticle.find('.article-body').append(this.body);
   $newArticle.removeClass('template');
   return $newArticle;
