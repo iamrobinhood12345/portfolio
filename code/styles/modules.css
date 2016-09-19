@@ -1,3 +1,8 @@
+
+.template {
+  display: none;
+}
+
 .heading-group-h1 {
   float: left;
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-height" intial-scale="1" />
-    <title>Ben's Projects</title>
+    <title>The Perfect Form</title>
     <link rel="stylesheet" href="vendor/styles/normalize.css">
     <link rel="stylesheet" href="vendor/style.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -24,8 +24,8 @@
         <div class="icon-office">
         </div>
         <ul>
-          <li><a href="file:///Users/BigBen/CodeFellows/301/portfolio/code/index.html">Home</a></li>
-          <li><a href="">About</a></li>
+          <li class="tab" data-content="projects"><a href="file:///Users/BigBen/CodeFellows/301/portfolio/code/index.html">Home</a></li>
+          <li class="tab" data-content="about"><a href="">About</a></li>
           <li><a href="https://www.linkedin.com/in/william-shields-87740582?trk=nav_responsive_tab_profile_pic" target="_blank"> LinkedIn</a></li>
           <li><a href="https://github.com/iamrobinhood12345" target="_blank"> GitHub</a></li>
           <li><a href="https://shieldsbooks.wordpress.com/2016/06/06/25/" target="_blank"> Shields Books</a></li>
@@ -33,22 +33,22 @@
       </nav>
     </header>
     <main>
-      <section id="projects">
+      <section id="projects" class="tab-content">
         <article class="template">
           <header>
             <h1><a href="">
               Title
             </a></h1>
-            <div class="publishedLine">
+            <p class="publishedLine">
               <!--Published <time pubdate datetime="2000-01-01">Publish Time</time>-->
               Published on
-            </div>
+            </p>
             <!--<section class="article-body"><p>Working on this website. Under construction!</p></section>-->
           </header>
           <section class="article-body"></section>
         </article>
       </section>
-      <section id="about">
+      <section id="about" class="tab-content">
         <header>
           <h1>
           About
@@ -62,13 +62,17 @@
           <p>"I believe in a minimum viable product."</br>
           -Me<br/><br/>
           </p>
+          <p>
+           </br>
+          </p>
       </section>
     </main>
     <footer>
-      &copy; 2016 William Benjamin Shields <|-|-|>
+      &nbsp;&nbsp;&copy; 2016 William Benjamin Shields <|-|-|>
     </footer>
     <script src="scripts/jquery.js"></script>
     <script src="scripts/blogProjects.js"></script>
     <script src="scripts/article.js"></script>
+    <script src="scripts/articleView.js"></script>
   </body>
 </html>

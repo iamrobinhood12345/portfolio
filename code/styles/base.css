@@ -1,3 +1,13 @@
+body {
+  background-image: url("images/blue-space2.jpg");
+  background-attachment: fixed;
+  color: silver;
+}
+
+a {
+  color: silver;
+}
+
 h1, h2 {
   margin: 0 2.5%
 }
