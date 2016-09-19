@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?j5io5s');
-  src:  url('fonts/icomoon.eot?j5io5s#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?j5io5s') format('truetype'),
-    url('fonts/icomoon.woff?j5io5s') format('woff'),
-    url('fonts/icomoon.svg?j5io5s#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?vwpla0');
+  src:  url('fonts/icomoon.eot?vwpla0#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?vwpla0') format('truetype'),
+    url('fonts/icomoon.woff?vwpla0') format('woff'),
+    url('fonts/icomoon.svg?vwpla0#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -54,3 +54,22 @@
 .icon-blog:before {
   content: "\e909";
 }
+.icon-play3:before {
+  content: "\ea1c";
+}
+.icon-volume-high:before {
+  content: "\ea26";
+}
+.icon-volume-medium:before {
+  content: "\ea27";
+}
+.icon-volume-low:before {
+  content: "\ea28";
+}
+.icon-volume-mute:before {
+  content: "\ea29";
+}
+.icon-infinite:before {
+  content: "\ea2f";
+}
+

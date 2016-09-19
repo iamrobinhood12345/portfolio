@@ -8,13 +8,16 @@ function Article (options) {
 }
 
 Article.prototype.toHtml = function() {
-  var $newArticle = $('article.template').clone();
-  $newArticle.find('h1 a').attr('href', this.projectUrl);
-  $newArticle.find('h1 a').text(this.title);
-  $newArticle.find('p').append(this.publishedOn);
-  $newArticle.find('.article-body').append(this.body);
-  $newArticle.removeClass('template');
-  return $newArticle;
+  var source = $('#article-template').html();
+  var templateRender = Handlebars.compile(source);
+  return templateRender(this);
+  //var $newArticle = $('article.template').clone();
+  //$newArticle.find('h1 a').attr('href', this.projectUrl);
+  //$newArticle.find('h1 a').text(this.title);
+  //$newArticle.find('p').append(this.publishedOn);
+  //$newArticle.find('.article-body').append(this.body);
+  //$newArticle.removeClass('template');
+  //return $newArticle;
 };
 
 ourLocalData.forEach(function(article) {

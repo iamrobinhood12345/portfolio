@@ -9,8 +9,22 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
+    <script id="article-template" type="text/x-handlebars-template">
+      <header>
+        <h1><a href="{{projectUrl}}">
+          {{title}}
+        </a></h1>
+        <p class="publishedLine">
+          Published on {{publishedOn}}
+        </p>
+        {{{body}}}
+        <p></br>
+        </p>
+      </header>
+    </script>
   </head>
   <body>
+    <section id="main-page" class="main-page-content">
     <header class="site-header clearfix">
       <section class="heading-group-h1">
        <h1>
@@ -34,19 +48,17 @@
     </header>
     <main>
       <section id="projects" class="tab-content">
-        <article class="template">
-          <header>
-            <h1><a href="">
-              Title
-            </a></h1>
-            <p class="publishedLine">
-              <!--Published <time pubdate datetime="2000-01-01">Publish Time</time>-->
-              Published on
-            </p>
-            <!--<section class="article-body"><p>Working on this website. Under construction!</p></section>-->
-          </header>
-          <section class="article-body"></section>
-        </article>
+  <!--      <article class="template">   -->
+    <!--      <header>   -->
+      <!--      <h1><a href="">   -->
+      <!--        Title   -->
+      <!--      </a></h1>   -->
+      <!--      <p class="publishedLine">   -->
+      <!--        Published on   -->
+      <!--      </p>   -->
+      <!--    </header>   -->
+          <!--<section class="article-body"></section>-->
+  <!--      </article>    -->
       </section>
       <section id="about" class="tab-content">
         <header>
@@ -54,25 +66,36 @@
           About
           </h1>
         </header>
-        <section>
-          <p>Quotes:</br></br></p>
-          <p>"Three things are to be looked to in a building: that it stands in the right spot; that it be securely founded; that it be successfully executed.""</br>
-          -Johann Wolfgang von Goethe<br/><br/>
-          </p>
-          <p>"I believe in a minimum viable product."</br>
-          -Me<br/><br/>
-          </p>
-          <p>
-           </br>
-          </p>
+        <p>Quotes:</br></br></p>
+        <p>"Three things are to be looked to in a building: that it stands in the right spot; that it be securely founded; that it be successfully executed.""</br>
+        -Johann Wolfgang von Goethe<br/><br/>
+        </p>
+        <p>"I believe in a minimum viable product."</br>
+        -Me<br/><br/>
+        </p>
+      </section>
+      </section>
+      <section class="intro-icons">
+        <div class="icon-play3">
+        </div>
+        <div class="icon-volume-mute">
+        </div>
+        <div class="icon-volume-low">
+        </div>
+        <div class="icon-volume-medium">
+        </div>
+        <div class="icon-volume-high">
+        </div>
       </section>
     </main>
     <footer>
       &nbsp;&nbsp;&copy; 2016 William Benjamin Shields <|-|-|>
     </footer>
     <script src="scripts/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script src="scripts/blogProjects.js"></script>
     <script src="scripts/article.js"></script>
     <script src="scripts/articleView.js"></script>
+  </section>
   </body>
 </html>

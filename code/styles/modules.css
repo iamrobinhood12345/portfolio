@@ -1,3 +1,8 @@
+.tab-content a {
+  color: purple;
+  font-family: arial;
+}
+/*color here*//*color here*//*color here*/
 
 .template {
   display: none;
@@ -5,7 +10,10 @@
 
 .heading-group-h1 {
   float: left;
+  font-family: arial;
 }
+
+/*font*/
 
 .main-nav ul {
   display: none;
