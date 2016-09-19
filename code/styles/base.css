@@ -2,19 +2,24 @@ body {
   background-image: url("images/blue-space2.jpg");
   background-attachment: fixed;
   color: silver;
+  font-family: garamond;
 }
+/*color here*//*color here*//*color here*/
 
 a {
   color: silver;
 }
+/*color here*//*color here*//*color here*/
 
 h1, h2 {
-  margin: 0 2.5%
+  margin: 0 2.5%;
 }
+/*margin/padding*/
 
 p {
   margin: 0 4%
 }
+/*margin/padding*/
 
 article {
   border-bottom: 2px solid black;
