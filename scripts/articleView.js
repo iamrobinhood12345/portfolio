@@ -40,7 +40,7 @@ var articleView = {};
 
 articleView.handleMainNav = function() {
   $('.main-nav').on('click', '.tab', function(e) {
-    event.preventDefault(e);
+    e.preventDefault();
     $('.tab-content').hide();
     $('#'+$(this).attr('data-content')).fadeIn();
   });
